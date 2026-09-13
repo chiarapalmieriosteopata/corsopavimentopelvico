@@ -263,6 +263,55 @@
     border-bottom:1px solid var(--ink); padding-bottom:3px;
   }
 
+  /* ---------- LEARN (cosa imparerai) ---------- */
+  .learn{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .learn-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  @media (max-width:720px){ .learn-grid{grid-template-columns:1fr;} }
+  .learn-item{
+    background:var(--paper);
+    padding:30px 30px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+  }
+  .learn-num{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:1.7rem;
+    color:var(--rose);
+    line-height:1.2;
+    flex-shrink:0;
+  }
+  .learn-item p{color:var(--ink-soft); font-size:0.96rem; line-height:1.55;}
+  .learn-plus{
+    margin-top:1px;
+    background:var(--sage-deep);
+    border:1px solid var(--sage-deep);
+    padding:30px 34px;
+    display:flex;
+    align-items:center;
+    gap:22px;
+    flex-wrap:wrap;
+  }
+  .learn-plus-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:1.15rem;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--paper);
+    background:var(--rose-deep);
+    padding:8px 18px;
+    flex-shrink:0;
+  }
+  .learn-plus p{color:var(--paper); font-size:1.02rem; line-height:1.5; max-width:58ch;}
+
   /* ---------- FIT (per chi è pensato) ---------- */
   .fit-grid{
     display:grid;
@@ -335,7 +384,7 @@
 <nav>
   <div class="wrap">
     <span class="brand">Pavimento Pelvico · 360°</span>
-    <a class="nav-cta" href="#prenota">Prenota</a>
+    <a class="nav-cta" href="https://www.paypal.com/ncp/payment/9ZLTW3F2BDPH4" target="_blank" rel="noopener">Prenota</a>
   </div>
 </nav>
 
@@ -435,6 +484,43 @@
   </div>
 </section>
 
+<section class="learn reveal">
+  <div class="wrap">
+    <span class="eyebrow">Cosa porti a casa</span>
+    <h2 style="margin-top:12px; margin-bottom:40px;">Cosa imparerai in questo corso</h2>
+    <div class="learn-grid">
+      <div class="learn-item">
+        <span class="learn-num">01</span>
+        <p>Cos'è il pavimento pelvico, come è fatto e come funziona nel quotidiano</p>
+      </div>
+      <div class="learn-item">
+        <span class="learn-num">02</span>
+        <p>Come riconoscere i segnali di una difficoltà legata al pavimento pelvico, prima che diventino un problema</p>
+      </div>
+      <div class="learn-item">
+        <span class="learn-num">03</span>
+        <p>Come arrivare al parto nel modo migliore, imparando a rendere il pavimento pelvico un tuo alleato</p>
+      </div>
+      <div class="learn-item">
+        <span class="learn-num">04</span>
+        <p>Come prenderti cura del tuo pavimento pelvico dopo il parto, nel percorso di recupero</p>
+      </div>
+      <div class="learn-item">
+        <span class="learn-num">05</span>
+        <p>Come respirazione, postura e core lavorano insieme al pavimento pelvico</p>
+      </div>
+      <div class="learn-item">
+        <span class="learn-num">06</span>
+        <p>Esercizi pratici e sicuri da portare a casa e ripetere in autonomia</p>
+      </div>
+    </div>
+    <div class="learn-plus">
+      <span class="learn-plus-tag">Plus</span>
+      <p>Dopo una valutazione personalizzata, un piano individuale redatto dalle tre professioniste per poter proseguire in autonomia nel tuo quotidiano</p>
+    </div>
+  </div>
+</section>
+
 <section class="fit reveal">
   <div class="wrap">
     <span class="eyebrow">Per chi è pensato</span>
@@ -493,27 +579,28 @@
         <h3>Pacchetto completo</h3>
         <div class="price-line">
           <span class="price-now">149 €</span>
-          <span class="price-was">169 €</span>
+          <span class="price-was">187 €</span>
         </div>
         <ul>
           <li>2 workshop teorico-pratici</li>
           <li>Check-up multidisciplinare individuale</li>
           <li>Materiale con esercizi da eseguire a casa</li>
         </ul>
-        <a class="btn-primary" href="https://www.paypal.com/ncp/payment/9ZLTW3F2BDPH4" target="_blank" rel="noopener">Prenota il pacchetto</a>
+        <a class="btn-primary" href="https://www.paypal.com/ncp/payment/9ZLTW3F2BDPH4" target="_blank" rel="noopener">Prenota il pacchetto al prezzo di lancio</a>
+        <p style="font-size:0.78rem; color:var(--ink-soft); margin-top:12px;">*Prezzo di lancio valido fino al 30 settembre</p>
       </div>
       <div class="price-card">
         <h3>Incontri singoli</h3>
         <div class="price-line">
-          <span class="price-now">49 €</span>
+          <span class="price-now">59 €</span>
         </div>
         <ul>
           <li>Un solo incontro teorico-pratico</li>
-          <li>Check-up individuale a parte: 69 €</li>
+          <li>Check-up individuale con tre professioniste a parte: 69 €</li>
           <li>Ideale se vuoi iniziare con un solo appuntamento</li>
         </ul>
         <p style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:20px;">(solo se disponibilità di posti, la precedenza di prenotazione viene data a chi si iscrive al percorso completo)</p>
-        <a class="btn-secondary" href="#prenota">Prenota un incontro</a>
+        <a class="btn-secondary" href="https://wa.me/393493204167?text=Ciao!%20Vorrei%20avere%20maggiori%20informazioni%20sul%20Percorso%20Pavimento%20Pelvico%20%F0%9F%8C%B8" target="_blank" rel="noopener">Prenota un incontro</a>
       </div>
     </div>
   </div>
